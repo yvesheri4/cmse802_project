@@ -1,4 +1,11 @@
 # Project Title: Application of Machine Learning to Solve the Inverse Problem of Envelope Equations in Accelerator Physics
+
+This repository implements machine learning techniques, including non-linear regression and Physics-Informed Neural Networks (PINNs), to solve the inverse problem of the Kapchinsky-Vladimirsky (KV) equation. It includes data preprocessing, model code, Jupyter notebooks, and results, supporting reproducibility in computational research. Here is the repository directory structure tailored for this project:
+
+
+
+
+
 We are working on solving the inverse problem of the Kapchinsky-Vladimirsky (KV) envelope equation in accelerator physics expressed as
 
 $$
@@ -21,5 +28,43 @@ In this project we aim specifically to:
 
 4. Develop a small-scale prototype of a PINN using TensorFlow or PyTorch. Start with a forward problem, then adapt to the inverse problem by embedding the KV equation into the loss function.
 
-6. Physics-based metrics, such as how well the model satisfies the KV envelope equation.
+5. Physics-based metrics, such as how well the model satisfies the KV envelope equation.
 ...
+
+
+Project-Repo
+│
+├── data                        # Contains datasets
+│   ├── raw                     # Raw, unprocessed data files
+│   └── processed               # Preprocessed and cleaned data
+│
+├── notebooks                   # Jupyter notebooks for analysis and experiments
+│   ├── 01_data_exploration.ipynb        # Initial data exploration
+│   ├── 02_non_linear_regression.ipynb   # Non-linear regression models
+│   ├── 03_PINN_forward_problem.ipynb    # PINN for forward problem
+│   └── 04_PINN_inverse_problem.ipynb    # PINN for inverse problem
+│
+├── models                      # Contains trained models and checkpoints
+│   └── kv_pinn_model.pt       # Example of a trained PINN model
+│
+├── src                         # Source code directory
+│   ├── __init__.py            # Initialization for the Python module
+│   ├── data_preprocessing.py   # Scripts for data cleaning and preprocessing
+│   ├── non_linear_regression.py # Non-linear regression models
+│   ├── pinn_model.py           # PINN implementation
+│   └── utils.py                # Utility functions
+│
+├── scripts                     # Helper scripts and commands
+│   └── run_training.sh         # Script to train the model
+│
+├── tests                       # Unit and integration tests for the codebase
+│   └── test_pinn_model.py      # Example test for the PINN implementation
+│
+├── results                     # Directory for output results
+│   ├── figures                 # Generated plots and figures
+│   └── logs                    # Logs and performance metrics
+│
+├── requirements.txt            # Python dependencies
+├── README.md                   # Project description, setup instructions, and usage
+├── LICENSE                     # Project license
+└── .gitignore                  # Files to be ignored in the GitHub repository
