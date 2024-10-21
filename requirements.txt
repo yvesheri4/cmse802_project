@@ -1,0 +1,17 @@
+# Data processing and analysis
+numpy==1.24.0            # Numerical computations
+pandas==1.5.3            # Data manipulation and analysis
+scipy==1.10.0            # Scientific computing
+
+# Machine Learning
+scikit-learn==1.2.0      # Machine learning algorithms
+tensorflow==2.12.0       # TensorFlow for building neural networks
+torch==2.0.0             # PyTorch for deep learning (if using PINNs)
+
+# Visualization
+matplotlib==3.6.2        # Plotting and visualization
+seaborn==0.12.2          # Statistical data visualization
+
+# Jupyter and Notebooks
+jupyter==1.0.0           # Jupyter Notebook for interactive development
+notebook==6.5.3          # Jupyter Notebook interface
