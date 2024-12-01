@@ -1,4 +1,4 @@
-Project Title: Application of Machine Learning to Solve the Inverse Problem of Envelope Equations in Accelerator Physics
+Project Title: Application of Machine Learning in Accelerator Physics
 ===============================
 
 This repository implements machine learning techniques, including non-linear regression and Physics-Informed Neural Networks (PINNs), to solve the inverse problem of the Kapchinsky-Vladimirsky (KV) equation. It includes data preprocessing, model code, Jupyter notebooks, and results, supporting reproducibility in computational research. Here is the repository directory structure tailored for this project:
@@ -11,26 +11,21 @@ cmse802_project
 │   └── processed               # Preprocessed and cleaned data
 │
 ├── notebooks                   # Jupyter notebooks for analysis and experiments
-│   ├── 01_data_exploration.ipynb        # Initial data exploration
-│   ├── 02_non_linear_regression.ipynb   # Non-linear regression models
-│   ├── 03_PINN_forward_problem.ipynb    # PINN for forward problem
-│   └── 04_PINN_inverse_problem.ipynb    # PINN for inverse problem
+│   ├── 01_data_generation.ipynb        # Initial data exploration
+│   ├── 02_data_exploration.ipynb       # 
+│   ├── 03_LSTM_forward_problem.ipynb   # LSTM for forward problem
 │
-├── models                      # Contains trained models and checkpoints
-│   └── kv_pinn_model.pt       # Example of a trained PINN model
-│
-├── src                         # Source code directory
-│   ├── __init__.py            # Initialization for the Python module
-│   ├── data_preprocessing.py   # Scripts for data cleaning and preprocessing
-│   ├── non_linear_regression.py # Non-linear regression models
-│   ├── pinn_model.py           # PINN implementation
-│   └── utils.py                # Utility functions
+├── src                           # Source code directory
+│   ├── __init__.py               # Initialization for the Python module
+│   ├── data_preprocessing.py     # Scripts for data cleaning and preprocessing
+│   ├── LSTM_model.py             # Model implementation
+│   └── utils.py                  # Utility functions
 │
 ├── scripts                     # Helper scripts and commands
 │   └── run_training.sh         # Script to train the model
 │
 ├── tests                       # Unit and integration tests for the codebase
-│   └── test_pinn_model.py      # Example test for the PINN implementation
+│   └── test_LSTM_model.py      # Example test for the PINN implementation
 │
 ├── results                     # Directory for output results
 │   ├── figures                 # Generated plots and figures
